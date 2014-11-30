@@ -11,7 +11,7 @@ public class Caller {
 	String state;
 	String country;
 	Long zip;
-	boolean blocked;
+	boolean isBlocked;
 	
 	public Long getId() {
 		return id;
@@ -50,9 +50,9 @@ public class Caller {
 		this.zip = zip;
 	}
 	public boolean isBlocked() {
-		return blocked;
+		return isBlocked;
 	}
-	public void setBlocked(boolean blocked) {
-		this.blocked = blocked;
+	public void setBlocked(boolean isBlocked) {
+		this.isBlocked = isBlocked;
 	}
 }
