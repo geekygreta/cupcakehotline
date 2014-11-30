@@ -10,4 +10,8 @@ public class CupcakehotlineServlet extends HttpServlet {
 		resp.setContentType("text/plain");
 		resp.getWriter().println(req.toString());
 	}
+	@Override
+	public void init(){
+		//Register Objectify entities here
+	}
 }
