@@ -1,4 +1,4 @@
-package org.translifeline.cupcakehotline;
+package org.translifeline.cupcakehotline.objectify;
 
 import org.translifeline.cupcakehotline.models.Call;
 import org.translifeline.cupcakehotline.models.Caller;

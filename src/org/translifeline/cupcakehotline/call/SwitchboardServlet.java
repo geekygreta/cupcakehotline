@@ -2,7 +2,7 @@ package org.translifeline.cupcakehotline.call;
 
 import javax.servlet.http.*;
 
-public class CallServlet extends HttpServlet {
+public class SwitchboardServlet extends HttpServlet {
 
 	/**
 	 * 

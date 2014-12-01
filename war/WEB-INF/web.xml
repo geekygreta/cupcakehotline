@@ -4,6 +4,7 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<!-- Do we need this servlet?? -->
 	<servlet>
 		<servlet-name>Cupcakehotline</servlet-name>
 		<servlet-class>org.translifeline.cupcakehotline.CupcakehotlineServlet</servlet-class>
@@ -12,6 +13,27 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Cupcakehotline</servlet-name>
 		<url-pattern>/cupcakehotline</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Call -->
+	<servlet>
+		<servlet-name>SwitchboardServlet</servlet-name>
+		<servlet-class>org.translifeline.cupcakehotline.call.SwitchboardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SwitchboardServlet</servlet-name>
+		<url-pattern>/switchboard</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Controllers -->
+	<servlet>
+		<servlet-name>OperatorServlet</servlet-name>
+		<servlet-class>org.translifeline.cupcakehotline.controller.OperatorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OperatorServlet</servlet-name>
+		<url-pattern>/operator</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
