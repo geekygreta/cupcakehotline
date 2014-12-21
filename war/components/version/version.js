@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('myApp.version', [
-  'myApp.version.interpolate-filter',
-  'myApp.version.version-directive'
+angular.module('cupcakeHotline.version', [
+  'cupcakeHotline.version.interpolate-filter',
+  'cupcakeHotline.version.version-directive'
 ])
 
 .value('version', '0.1');

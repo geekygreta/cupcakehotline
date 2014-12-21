@@ -1,12 +1,24 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('cupcakeHotline', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
+  'mgcrea.ngStrap',
+  'pascalprecht.translate',
+
+  'cupcakeHotline.view1',
+  'cupcakeHotline.view2',
+  'cupcakeHotline.version',
+])
+
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+}])
+
+.config(function($translateProvider) {
+  $translateProvider.preferredLanguage('en_US');
+  $translateProvider.useStaticFilesLoader({
+    prefix: '/locale/',
+    suffix: '.json'
+  });
+});
